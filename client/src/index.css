@@ -1,0 +1,126 @@
+/* ============================= */
+/* Tailwind v4 Import */
+/* ============================= */
+@import "tailwindcss";
+
+/* ============================= */
+/* Root Fixes */
+/* ============================= */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ✅ FIXED: Only sections (not *) */
+section {
+  scroll-margin-top: 100px;
+}
+
+/* ============================= */
+/* Body Background */
+/* ============================= */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background-color: #020617;
+}
+
+/* Subtle background glow (no external image needed) */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at 20% 10%, rgba(249, 115, 22, 0.08), transparent 40%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* ============================= */
+/* Skill Cards */
+/* ============================= */
+.skill-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  border-color: rgba(255, 140, 0, 0.4);
+  box-shadow: 0 0 25px rgba(255, 140, 0, 0.15);
+}
+
+.skill-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  padding: 1px;
+  background: linear-gradient(120deg, transparent, rgba(255,140,0,0.3), transparent);
+
+  -webkit-mask: 
+    linear-gradient(#000 0 0) content-box, 
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.skill-card:hover::before {
+  opacity: 1;
+}
+
+/* ============================= */
+/* Progress Bar */
+/* ============================= */
+@keyframes fillBar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: var(--target-width);
+  }
+}
+
+.progress-bar {
+  height: 6px;
+  border-radius: 999px;
+  animation: fillBar 1.2s ease-out forwards;
+}
+
+/* ============================= */
+/* Floating Animation */
+/* ============================= */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* ============================= */
+/* Project Cards */
+/* ============================= */
+.project-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  transition: all 0.35s ease;
+  border-radius: 16px;
+}
+
+.project-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: rgba(255, 140, 0, 0.4);
+  box-shadow: 0 0 30px rgba(255, 140, 0, 0.15);
+}
+
+
