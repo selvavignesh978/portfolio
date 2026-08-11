@@ -27,7 +27,7 @@ export default function Navbar({ dark, setDark }) {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, );
 
   // ✅ SMOOTH SCROLL FIX (simpler & reliable)
   const handleScrollTo = (id) => {
