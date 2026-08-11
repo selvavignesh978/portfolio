@@ -5,7 +5,7 @@ import dotenv from "dotenv";
 
 import Subscriber from "./models/Subscriber.js"; // ✅ FIXED NAME
 
-dotenv.config();
+dotenv.config("https://portfolio-2vmc.onrender.com");
 
 const app = express();
 
