@@ -1,6 +1,6 @@
 import profileImg from "../assets/profile.png";
 import { profile } from "../data/portfolioData";
-import Resume from "../image&data/Selvavignesh_R_MERN_Resume_v2.pdf"
+import Resume from "../image&data/Selvavignesh_R_.pdf"
 
 export default function Hero() {
 
@@ -46,7 +46,7 @@ export default function Hero() {
             {/* DOWNLOAD CV */}
             <a
               href={Resume}
-              download="Selvavignesh_R_MERN_Resume_v2.pdf"
+              download="Selvavignesh_R_.pdf"
               className="bg-orange-500 px-6 py-3 rounded-full hover:bg-orange-400 transition"
             >
               Download Resume
