@@ -17,26 +17,33 @@ export const skills = {
 
 export const projects = [
   {
-    title: "MERN CRM System",
-    tech: "React.js, Node.js, Express.js, MongoDB",
-    description:
-      "A scalable Customer Relationship Management app with full CRUD for leads, pipeline stages, and client records, backed by RESTful APIs and Mongoose models for real-time updates.",
-    github: "https://github.com/selvavignesh978/mern-crm"
+    title: "ShopSmart-AI",
+    description: "An AI-powered smart shopping assistant and e-commerce UI built using React, featuring interactive product filtering and dynamic state management.",
+    tech: "React, JavaScript, Tailwind CSS, REST APIs",
+    github: "https://github.com/selvavignesh978/ShopSmart-AI",
+    demo: "https://shop-smart-ai-ten.vercel.app/",
   },
   {
-    title: "E-Commerce Backend System",
-    tech: "Node.js, Express.js, MongoDB",
-    description:
-      "A backend API service powering e-commerce operations — user authentication, product catalog handling, and order management — with optimized async/await querying and error-handling middleware.",
-    github: "https://github.com/selvavignesh978/Building-an-E-Commerce-Backend-System"
+    title: "MERN E-Commerce Platform",
+    description: "End-to-end full-stack e-commerce application featuring complete frontend and backend integration, secure user authentication, product catalogs, and cart management.",
+    tech: "MongoDB, Express.js, React, Node.js, Redux",
+    github: "https://github.com/selvavignesh978/M5---End-to-End-MERN-Stack-ECommerce-Platform-Frontend-and-Backend-Integration",
+    demo: "https://e-commerce-platform-frontend-and-ba.vercel.app/",
   },
   {
-    title: "React E-commerce Storefront",
-    tech: "React.js, Bootstrap, JavaScript",
-    description:
-      "A responsive e-commerce front end with interactive product cards, dynamic filtering, and custom shopping cart state management, built with the Bootstrap grid for cross-device compatibility.",
-    github: "https://github.com/selvavignesh978/React_Eco"
-  }
+    title: "MERN CRM Dashboard",
+    description: "A customer relationship management tool designed for managing contacts and tracking interactions with full CRUD functionality and backend API integration.",
+    tech: "MongoDB, Express.js, React, Node.js",
+    github: "https://github.com/selvavignesh978/mern-crm",
+    demo: "https://mern-crm-drab.vercel.app/login",
+  },
+  {
+    title: "Trabook Travel Web App",
+    description: "A fully responsive travel agency landing page and web application showcasing clean layouts, smooth UI components, and mobile-first design principles.",
+    tech: "HTML5, CSS3, JavaScript, Bootstrap",
+    github: "https://github.com/selvavignesh978/To-Build-a-Responsive-Travel-Web-App-Landing-Page",
+    demo: "https://to-build-a-responsive-travel-web-ap.vercel.app/",
+  },
 ];
 
 export const experience = [

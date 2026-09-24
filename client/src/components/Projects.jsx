@@ -1,4 +1,4 @@
-import { FaGithub, FaDatabase, FaShoppingCart, FaServer } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt, FaDatabase, FaServer, FaShoppingCart } from "react-icons/fa";
 import { projects } from "../data/portfolioData";
 
 const iconFor = (i) => [FaDatabase, FaServer, FaShoppingCart][i % 3];
@@ -27,7 +27,7 @@ export default function Projects() {
               className="project-card overflow-hidden rounded-2xl bg-[#0a0f1c] border border-gray-800 hover:scale-[1.02] transition duration-300 flex flex-col"
             >
 
-              {/* ICON HEADER (no fabricated screenshots) */}
+              {/* ICON HEADER */}
               <div className="h-40 flex items-center justify-center bg-gradient-to-br from-orange-500/20 to-gray-900">
                 <Icon className="text-5xl text-orange-400" />
               </div>
@@ -55,7 +55,7 @@ export default function Projects() {
                   ))}
                 </div>
 
-                {/* BUTTON */}
+                {/* BUTTONS */}
                 <div className="mt-auto flex gap-3">
                   <a
                     href={project.github}
@@ -65,6 +65,16 @@ export default function Projects() {
                   >
                     <FaGithub /> Code
                   </a>
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 flex items-center justify-center gap-2 text-center bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-lg text-sm transition"
+                    >
+                      <FaExternalLinkAlt /> Live Demo
+                    </a>
+                  )}
                 </div>
 
               </div>
